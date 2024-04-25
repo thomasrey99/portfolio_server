@@ -2,7 +2,7 @@ const { Sequelize } = require("sequelize");
 const skillModel=require("./skills/model/index")
 const experienceModel=require("./experience/model/index")
 const certificationModel=require("./certifications/model/index")
-
+const projectModel=require("./projects/model/index")
 require("dotenv").config(); 
 
 const {
@@ -23,6 +23,7 @@ const dataBase=new Sequelize(
 skillModel(dataBase)
 experienceModel(dataBase)
 certificationModel(dataBase)
+projectModel(dataBase)
 
 module.exports={
     ...dataBase.models,
