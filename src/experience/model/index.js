@@ -6,12 +6,17 @@ module.exports=(database)=>{
             uid:{
                 type:DataTypes.UUID,
                 primaryKey:true,
+                defaultValue:DataTypes.UUIDV4
             },
             company:{
                 type:DataTypes.STRING,
                 allowNull:false
             },
-            name:{
+            position_name:{
+                type:DataTypes.STRING,
+                allowNull:false
+            },
+            image:{
                 type:DataTypes.STRING,
                 allowNull:false
             },

@@ -59,7 +59,7 @@ const createProjectHandler=async(req, res)=>{
             return res.status(500).json({
                 status:500,
                 error:false,
-                message:"Insufficient information",
+                message:"Insufficient information, complete all fields",
                 body:null
             })
 

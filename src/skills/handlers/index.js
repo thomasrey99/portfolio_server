@@ -57,7 +57,7 @@ const createSkillHandler=async(req, res)=>{
             return res.status(500).json({
                 status:500,
                 error:true,
-                message:`The following information needs to be loaded: ${!name && "\n name"} ${!image && "\n image"} ${!year_learning && "\n year_learning"}`,
+                message:"Insufficient information, complete all fields",
                 body:null
             })
         }
