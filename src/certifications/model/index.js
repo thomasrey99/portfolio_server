@@ -6,6 +6,7 @@ module.exports=(database)=>{
             uid:{
                 type:DataTypes.UUID,
                 primaryKey:true,
+                defaultValue:DataTypes.UUIDV4
             },
             title:{
                 type:DataTypes.STRING,
@@ -15,12 +16,16 @@ module.exports=(database)=>{
                 type:DataTypes.STRING,
                 allowNull:false
             },
+            image:{
+                type:DataTypes.STRING,
+                allowNull:false
+            },
             start_date:{
-                type:DataTypes.DATE,
+                type:DataTypes.STRING,
                 allowNull:false,
             },
             end_date:{
-                type:DataTypes.DATE,
+                type:DataTypes.STRING,
                 allowNull:false
             }
         },
